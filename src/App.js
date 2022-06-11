@@ -47,7 +47,7 @@ function App() {
         </div>
         <Dropzone text="사진을 업로드해 주세요" onDrop={onImageDrop} />
         <p>혹은 샘플 중에서 골라 보세요</p>
-        <div className="flex">
+        <div>
           <SampleImage src={sample1} onClick={onImageClick} />
           <SampleImage src={sample2} onClick={onImageClick} />
           <SampleImage src={sample3} onClick={onImageClick} />

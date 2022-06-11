@@ -14,7 +14,7 @@ code {
 
 .github-mark {
   padding-top: 15px;
-  margin-left: 30px;
+  margin-left: calc(15px + 3vw);
 }
 
 .sample-image {

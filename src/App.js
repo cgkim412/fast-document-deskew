@@ -42,7 +42,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div style={{ display: "flex", flexDirection: "row" }}>
-          <h2>Fast Document Deskew</h2>
+          <h2 style={{marginLeft: 45}}>Fast Document Deskew</h2>
           <a href="https://github.com/cgkim412/fast-document-deskew" target="_blank"><img className="github-mark" src={ghMark}/></a>
         </div>
         <Dropzone text="사진을 업로드해 주세요" onDrop={onImageDrop} />

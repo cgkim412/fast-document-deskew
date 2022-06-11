@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import * as tf from '@tensorflow/tfjs';
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import Dropzone from "./dropzone"
 import deskew from "./deskew"
 

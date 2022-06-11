@@ -11,7 +11,7 @@ const ghMark = require("./assets/GitHub-Mark-Light-64px.png");
 
 function SampleImage(props) {
   return (
-    <img src={props.src} width={240} height={240} onClick={props.onClick} />
+    <img src={props.src} className='sample-image' onClick={props.onClick} />
   )
 }
 
@@ -52,7 +52,7 @@ function App() {
           <SampleImage src={sample2} onClick={onImageClick} />
           <SampleImage src={sample3} onClick={onImageClick} />
         </div>
-        <img src={image} width={400} height={400} onLoad={onImageLoad} style={{ transform: `rotate(${rotation}deg)`, marginTop: 100 }} />
+        <img src={image} className="output-image" onLoad={onImageLoad} style={{ transform: `rotate(${rotation}deg)` }} />
       </header>
     </div>
   );

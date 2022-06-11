@@ -16,3 +16,17 @@ code {
   padding-top: 15px;
   margin-left: 30px;
 }
+
+.sample-image {
+  width: 200px;
+  height: 200px;
+  max-width: 30vw;
+  max-height: 30vw;
+}
+
+.output-image {
+  max-width: 60vw;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}

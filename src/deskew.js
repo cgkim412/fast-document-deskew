@@ -28,16 +28,16 @@ function compute_score(edges, delta = 0.02) {
 
 export default function deskew(image, search_range = 90) {
     const half_range = Math.floor(search_range / 2);
-    const thumb = tf.image.resizeBilinear(image, [256, 256]);
+    const thumb = tf.image.resizeBilinear(image, [192, 192]);
     const gray = thumb.mean(2, true).expandDims().div(255);
+    const edges = sobel(gray);    
 
     let max_score = Number.NEGATIVE_INFINITY;
     let argmax = 0;
     for (let angle = -half_range; angle <= half_range; angle++) {
         tf.engine().startScope(); // prevent memory leak
-        let rotated = tf.image.rotateWithOffset(gray, deg2rad(angle));
-        let edges = sobel(rotated);
-        let score = compute_score(edges);
+        let rotated_edges = tf.image.rotateWithOffset(edges, deg2rad(angle));
+        let score = compute_score(rotated_edges);
         score = score.dataSync()[0]; // synced IO might cause some overhead 
         if (score >= max_score) {
             max_score = score;

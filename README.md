@@ -18,3 +18,5 @@ The algorithm implemented here is a simple and fast projection-based method I in
 ## Contact
 
 hermercur@gmail.com
+
+사용된 사진의 저작권과 관련하여 문제가 있는 경우, 위 이메일로 연락 주시기 바랍니다.

@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.github-mark {
+  padding-top: 15px;
+  margin-left: 30px;
+}

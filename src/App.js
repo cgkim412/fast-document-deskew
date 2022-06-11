@@ -7,6 +7,7 @@ import deskew from "./deskew"
 const sample1 = require("./assets/sample1.jpg");
 const sample2 = require("./assets/sample2.jpg");
 const sample3 = require("./assets/sample3.jpg");
+const ghMark = require("./assets/GitHub-Mark-Light-64px.png");
 
 function SampleImage(props) {
   return (
@@ -40,7 +41,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Fast Document Deskew</h2>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <h2>Fast Document Deskew</h2>
+          <a href="https://github.com/cgkim412/fast-document-deskew" target="_blank"><img className="github-mark" src={ghMark}/></a>
+        </div>
         <Dropzone text="사진을 업로드해 주세요" onDrop={onImageDrop} />
         <p>혹은 샘플 중에서 골라 보세요</p>
         <div className="flex">

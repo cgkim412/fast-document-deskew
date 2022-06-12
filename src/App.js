@@ -25,7 +25,6 @@ function App() {
   };
 
   const onImageLoad = (e) => {
-    setRotation(0);
     const img = tf.browser.fromPixels(e.target);
     const angle = deskew(img);
     setRotation(-angle);

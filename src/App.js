@@ -21,18 +21,17 @@ function App() {
   const [rotation, setRotation] = useState(0);
 
   const onImageClick = (e) => {
-    setRotation(0);
     setImage(e.target.src);
   };
 
   const onImageLoad = (e) => {
+    setRotation(0);
     const img = tf.browser.fromPixels(e.target);
     const angle = deskew(img);
     setRotation(-angle);
   };
   
   const onImageDrop = (file) => {
-    setRotation(0);
     const reader = new FileReader();
     reader.onload = (e) => {
       setImage(e.target.result);

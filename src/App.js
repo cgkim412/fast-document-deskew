@@ -21,6 +21,7 @@ function App() {
   const [rotation, setRotation] = useState(0);
 
   const onImageClick = (e) => {
+    setRotation(0);
     setImage(e.target.src);
   };
 
@@ -31,6 +32,7 @@ function App() {
   };
   
   const onImageDrop = (file) => {
+    setRotation(0);
     const reader = new FileReader();
     reader.onload = (e) => {
       setImage(e.target.result);

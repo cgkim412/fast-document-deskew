@@ -45,8 +45,8 @@ function App() {
           <h2 style={{marginLeft: 45}}>Fast Document Deskew</h2>
           <a href="https://github.com/cgkim412/fast-document-deskew" target="_blank"><img className="github-mark" src={ghMark}/></a>
         </div>
-        <Dropzone text="사진을 업로드해 주세요" onDrop={onImageDrop} />
-        <p>혹은 샘플 중에서 골라 보세요</p>
+        <Dropzone text="Upload a picture" onDrop={onImageDrop} />
+        <p>...or select a sample</p>
         <div>
           <SampleImage src={sample1} onClick={onImageClick} />
           <SampleImage src={sample2} onClick={onImageClick} />

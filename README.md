@@ -1,5 +1,5 @@
 # Fast Document Deskew
-Web App: https://cgkim412.github.io/fast-document-deskew/
+Web app: https://cgkim412.github.io/fast-document-deskew/
 
 ## Method
 

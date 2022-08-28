@@ -47,5 +47,5 @@ export default function deskew(image, search_range = 90) {
     }
     // const corrected = tf.image.rotateWithOffset(image.div(255).expandDims(), deg2rad(argmax));
     // return corrected
-    return argmax;
+    return argmax
 }
